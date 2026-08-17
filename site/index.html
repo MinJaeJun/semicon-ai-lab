@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>semicon-ai-lab — 반도체 제조 데이터 분석 대시보드</title>
+<meta name="description" content="반도체 제조 합성 데이터 5종과 그것을 실제로 푸는 분석 파이프라인. 수율 원인 추적 · Etch 레시피 예측 · 장비 열화 감지 · 스토리지 마모 예측 · 신뢰성 설비 귀인.">
+<meta name="theme-color" content="#0b0e14">
+<meta property="og:title" content="semicon-ai-lab">
+<meta property="og:description" content="반도체 제조 합성 데이터 5종 + 분석 파이프라인. 전부 재현 가능.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%230b0e14'/><circle cx='16' cy='16' r='9' fill='none' stroke='%234da3ff' stroke-width='2'/><circle cx='16' cy='16' r='2.5' fill='%233ddc97'/></svg>">
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand">semicon<span>-ai-</span>lab</div>
+    <nav id="nav"></nav>
+    <a class="ghlink" href="https://github.com/MinJaeJun/semicon-ai-lab" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="p-home" class="page on"></section>
+  <section id="p-yieldlens" class="page"></section>
+  <section id="p-etchpilot" class="page"></section>
+  <section id="p-diceguard" class="page"></section>
+  <section id="p-cellhealth" class="page"></section>
+  <section id="p-relylab" class="page"></section>
+</main>
+
+<footer>
+  <div class="wrap">
+    데이터는 전부 저장소의 코드가 만든 합성 데이터다. 실제 기업 데이터를 포함하지 않는다.
+    <a href="https://github.com/MinJaeJun/semicon-ai-lab/blob/main/docs/DATA_LINEAGE.md" target="_blank" rel="noopener">합성 방침</a> ·
+    <a href="https://github.com/MinJaeJun/semicon-ai-lab" target="_blank" rel="noopener">소스</a>
+    <div class="tiny" style="margin-top:6px" id="stamp"></div>
+  </div>
+</footer>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
