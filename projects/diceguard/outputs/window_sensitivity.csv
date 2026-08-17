@@ -1,0 +1,7 @@
+window,days_used,n_significant,recall,precision
+full,120,3,1.0,1.0
+last45,46,3,1.0,1.0
+last30,31,3,1.0,1.0
+last21,22,3,1.0,1.0
+last14,15,3,0.667,0.667
+last7,8,1,0.0,0.0

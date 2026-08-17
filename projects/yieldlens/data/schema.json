@@ -1,0 +1,282 @@
+{
+  "dataset": "YieldLens wafer_history",
+  "grain": "1행 = 1 Wafer (1 Lot = 24 Wafer, 1 Wafer = 1,000 Die 가정)",
+  "steps": 24,
+  "id_columns": [
+    "Wafer_ID",
+    "Lot_ID",
+    "Slot"
+  ],
+  "config_format": "S{step:02d}|{TOOL}|{CH} — Tool 은 Lot 단위 고정, Chamber 는 Wafer 단위 변동",
+  "response_columns": [
+    "Step01_R1",
+    "Step02_R1",
+    "Step03_R1",
+    "Step03_R2",
+    "Step04_R1",
+    "Step05_R1",
+    "Step05_R2",
+    "Step05_R3",
+    "Step06_R1",
+    "Step07_R1",
+    "Step08_R1",
+    "Step08_R2",
+    "Step09_R1",
+    "Step10_R1",
+    "Step10_R2",
+    "Step11_R1",
+    "Step12_R1",
+    "Step12_R2",
+    "Step12_R3",
+    "Step13_R1",
+    "Step14_R1",
+    "Step14_R2",
+    "Step15_R1",
+    "Step16_R1",
+    "Step17_R1",
+    "Step17_R2",
+    "Step18_R1",
+    "Step19_R1",
+    "Step19_R2",
+    "Step19_R3",
+    "Step20_R1",
+    "Step21_R1",
+    "Step21_R2",
+    "Step22_R1",
+    "Step23_R1",
+    "Step23_R2",
+    "Step23_R3",
+    "Step24_R1"
+  ],
+  "defect_columns": [
+    "Step02_D1",
+    "Step06_D1",
+    "Step09_D1",
+    "Step13_D1",
+    "Step16_D1",
+    "Step18_D1",
+    "Step20_D1",
+    "Step24_D1"
+  ],
+  "targets": {
+    "yield": "Yield_pct",
+    "fail_rates": [
+      "FR_BRIDGE",
+      "FR_VOID",
+      "FR_PARTICLE",
+      "FR_SHORT",
+      "FR_OPEN"
+    ],
+    "fail_bits": [
+      "FB_BRIDGE",
+      "FB_VOID",
+      "FB_PARTICLE",
+      "FB_SHORT",
+      "FB_OPEN"
+    ]
+  },
+  "identity": "Yield_pct + sum(FR_*) == 100.0",
+  "measure_rate_target": {
+    "response": 0.22,
+    "defect": 0.08
+  },
+  "ground_truth_drivers": [
+    {
+      "factor": "Step07_R1",
+      "target": "FR_BRIDGE",
+      "shape": "u_shape",
+      "optimum": 48.0
+    },
+    {
+      "factor": "Step14_R2",
+      "target": "FR_VOID",
+      "shape": "u_shape",
+      "optimum": 71.5
+    },
+    {
+      "factor": "Step20_R1",
+      "target": "FR_SHORT",
+      "shape": "u_shape",
+      "optimum": 34.0
+    },
+    {
+      "factor": "Step23_R3",
+      "target": "FR_OPEN",
+      "shape": "u_shape",
+      "optimum": 62.0
+    },
+    {
+      "factor": "Step09_D1",
+      "target": "FR_PARTICLE",
+      "shape": "monotonic_increasing"
+    }
+  ],
+  "spec_limits": {
+    "Step01_R1": [
+      5.36,
+      37.55
+    ],
+    "Step02_R1": [
+      21.72,
+      50.93
+    ],
+    "Step03_R1": [
+      45.61,
+      70.75
+    ],
+    "Step03_R2": [
+      55.19,
+      83.2
+    ],
+    "Step04_R1": [
+      20.89,
+      52.75
+    ],
+    "Step05_R1": [
+      33.42,
+      67.98
+    ],
+    "Step05_R2": [
+      54.93,
+      81.78
+    ],
+    "Step05_R3": [
+      25.7,
+      53.03
+    ],
+    "Step06_R1": [
+      53.16,
+      82.92
+    ],
+    "Step07_R1": [
+      29.0,
+      69.0
+    ],
+    "Step08_R1": [
+      23.39,
+      58.5
+    ],
+    "Step08_R2": [
+      9.8,
+      41.48
+    ],
+    "Step09_R1": [
+      59.15,
+      84.32
+    ],
+    "Step10_R1": [
+      37.03,
+      58.56
+    ],
+    "Step10_R2": [
+      51.06,
+      70.94
+    ],
+    "Step11_R1": [
+      52.51,
+      79.85
+    ],
+    "Step12_R1": [
+      26.56,
+      46.47
+    ],
+    "Step12_R2": [
+      43.44,
+      64.89
+    ],
+    "Step12_R3": [
+      36.09,
+      62.64
+    ],
+    "Step13_R1": [
+      56.66,
+      82.28
+    ],
+    "Step14_R1": [
+      15.22,
+      49.57
+    ],
+    "Step14_R2": [
+      52.5,
+      92.5
+    ],
+    "Step15_R1": [
+      60.49,
+      94.83
+    ],
+    "Step16_R1": [
+      27.12,
+      54.25
+    ],
+    "Step17_R1": [
+      62.34,
+      96.53
+    ],
+    "Step17_R2": [
+      25.68,
+      48.97
+    ],
+    "Step18_R1": [
+      49.08,
+      70.47
+    ],
+    "Step19_R1": [
+      6.37,
+      37.57
+    ],
+    "Step19_R2": [
+      13.73,
+      47.7
+    ],
+    "Step19_R3": [
+      52.96,
+      89.06
+    ],
+    "Step20_R1": [
+      15.0,
+      55.0
+    ],
+    "Step21_R1": [
+      34.68,
+      68.61
+    ],
+    "Step21_R2": [
+      55.31,
+      77.22
+    ],
+    "Step22_R1": [
+      65.89,
+      85.87
+    ],
+    "Step23_R1": [
+      14.49,
+      38.2
+    ],
+    "Step23_R2": [
+      46.37,
+      66.63
+    ],
+    "Step23_R3": [
+      43.0,
+      83.0
+    ],
+    "Step24_R1": [
+      48.28,
+      69.94
+    ]
+  },
+  "files": {
+    "wafer_history.csv": [
+      12000,
+      84
+    ],
+    "wafer_history_holdout.csv": [
+      1080,
+      73
+    ],
+    "holdout_answers.csv": [
+      1080,
+      12
+    ]
+  }
+}

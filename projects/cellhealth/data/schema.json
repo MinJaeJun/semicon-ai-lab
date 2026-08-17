@@ -1,0 +1,128 @@
+{
+  "dataset": "CellHealth mobile storage field telemetry",
+  "grain": "1행 = 디바이스 1대 x 수집 회차 1회",
+  "devices": 100000,
+  "rounds": [
+    1,
+    2
+  ],
+  "rows": 200000,
+  "vendors": {
+    "HYX": {
+      "rated_pe": 3000,
+      "share": 0.46
+    },
+    "SMS": {
+      "rated_pe": 2800,
+      "share": 0.34
+    },
+    "MCR": {
+      "rated_pe": 2400,
+      "share": 0.2
+    }
+  },
+  "families": {
+    "UFS3.1": 0.52,
+    "UFS2.2": 0.3,
+    "eMMC5.1": 0.18
+  },
+  "densities": [
+    128,
+    256,
+    512,
+    1024
+  ],
+  "wearout_model": "pe_ratio > 0.70 부터 rtbb/uecc 가 멱함수적으로 증가 (지수 2.1 / 2.6)",
+  "columns": [
+    {
+      "name": "device_uid",
+      "description": "디바이스 고유 ID (수집 회차 간 동일)",
+      "type": "string"
+    },
+    {
+      "name": "collect_round",
+      "description": "수집 회차 (1차 / 2차)",
+      "type": "int"
+    },
+    {
+      "name": "collect_date",
+      "description": "수집 일자",
+      "type": "date"
+    },
+    {
+      "name": "vendor",
+      "description": "메모리 제조사 코드",
+      "type": "string"
+    },
+    {
+      "name": "product_family",
+      "description": "제품군 (UFS3.1 / UFS2.2 / eMMC5.1)",
+      "type": "string"
+    },
+    {
+      "name": "part_no",
+      "description": "제품 Part Number",
+      "type": "string"
+    },
+    {
+      "name": "density_gb",
+      "description": "공칭 용량 (GB)",
+      "type": "int"
+    },
+    {
+      "name": "fw_version",
+      "description": "펌웨어 버전",
+      "type": "string"
+    },
+    {
+      "name": "storage_used_gb",
+      "description": "실사용 용량 (GB)",
+      "type": "float"
+    },
+    {
+      "name": "storage_util",
+      "description": "총 용량 대비 사용률 (0~1)",
+      "type": "float"
+    },
+    {
+      "name": "pe_cycle",
+      "description": "블록 Program/Erase 반복 횟수",
+      "type": "int"
+    },
+    {
+      "name": "pe_ratio",
+      "description": "정격 P/E 수명 대비 소모율 (pe_cycle / rated_pe)",
+      "type": "float"
+    },
+    {
+      "name": "tbw_gb",
+      "description": "누적 기록량 Total Bytes Written (GB)",
+      "type": "int"
+    },
+    {
+      "name": "power_on_hours",
+      "description": "누적 전원 인가 시간",
+      "type": "int"
+    },
+    {
+      "name": "temp_max_c",
+      "description": "관측 최고 온도 (섭씨)",
+      "type": "int"
+    },
+    {
+      "name": "rtbb",
+      "description": "Run Time Bad Block — 사용 중 발생한 불량 블록 수",
+      "type": "int"
+    },
+    {
+      "name": "uecc",
+      "description": "Uncorrectable ECC — 정정 불가 비트 에러 발생 횟수",
+      "type": "int"
+    },
+    {
+      "name": "health_pct",
+      "description": "컨트롤러가 보고하는 잔여 수명 (%)",
+      "type": "int"
+    }
+  ]
+}

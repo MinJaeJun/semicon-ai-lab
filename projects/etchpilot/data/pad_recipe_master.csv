@@ -1,0 +1,13 @@
+Recipe_Version,Rev_No,Changed_Params,S1_Time_s,S1_Source_RF_W,S1_Bias_RF_W,S1_Pressure_mT,S1_Gas_Flow_sccm
+Base,0,,60.7,930.0,197.0,16.0,135.0
+Rev1,1,S1_Bias_RF_W|S1_Time_s,60.6,930.0,188.0,16.0,135.0
+Rev2,2,S1_Pressure_mT|S1_Source_RF_W,60.6,964.0,188.0,14.6,135.0
+Rev3,3,S1_Source_RF_W,60.6,928.0,188.0,14.6,135.0
+Rev4,4,S1_Source_RF_W|S1_Time_s,63.1,909.0,188.0,14.6,135.0
+Rev5,5,S1_Pressure_mT|S1_Source_RF_W|S1_Time_s,62.0,942.0,188.0,13.2,135.0
+Rev6,6,S1_Pressure_mT,62.0,942.0,188.0,13.4,135.0
+Rev7,7,S1_Pressure_mT,62.0,942.0,188.0,14.8,135.0
+Rev8,8,S1_Bias_RF_W|S1_Time_s,59.9,942.0,191.0,14.8,135.0
+Rev9,9,S1_Pressure_mT|S1_Time_s,57.5,942.0,191.0,14.5,135.0
+Rev10,10,S1_Bias_RF_W,57.5,942.0,201.0,14.5,135.0
+Rev11,11,S1_Gas_Flow_sccm|S1_Pressure_mT,57.5,942.0,201.0,17.3,132.0

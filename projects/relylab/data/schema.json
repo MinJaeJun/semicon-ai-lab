@@ -1,0 +1,253 @@
+{
+  "dataset": "RelyLab FinFET reliability",
+  "node": "5nm class (합성)",
+  "lots": 48,
+  "wafers": 1200,
+  "specs": {
+    "fin_width_nm": {
+      "lsl": 4.6,
+      "usl": 6.4,
+      "target": 5.5,
+      "unit": "nm"
+    },
+    "fin_height_nm": {
+      "lsl": 50.0,
+      "usl": 58.0,
+      "target": 54.0,
+      "unit": "nm"
+    },
+    "gate_length_nm": {
+      "lsl": 14.5,
+      "usl": 17.5,
+      "target": 16.0,
+      "unit": "nm"
+    },
+    "gate_ox_thk_nm": {
+      "lsl": 0.85,
+      "usl": 1.15,
+      "target": 1.0,
+      "unit": "nm"
+    },
+    "hk_thk_nm": {
+      "lsl": 1.45,
+      "usl": 1.85,
+      "target": 1.65,
+      "unit": "nm"
+    },
+    "sd_epi_thk_nm": {
+      "lsl": 11.5,
+      "usl": 14.5,
+      "target": 13.0,
+      "unit": "nm"
+    },
+    "contact_cd_nm": {
+      "lsl": 14.0,
+      "usl": 17.0,
+      "target": 15.5,
+      "unit": "nm"
+    },
+    "m1_width_nm": {
+      "lsl": 17.0,
+      "usl": 21.0,
+      "target": 19.0,
+      "unit": "nm"
+    },
+    "m1_space_nm": {
+      "lsl": 17.0,
+      "usl": 21.0,
+      "target": 19.0,
+      "unit": "nm"
+    },
+    "via_cd_nm": {
+      "lsl": 15.5,
+      "usl": 19.5,
+      "target": 17.5,
+      "unit": "nm"
+    },
+    "vt_n_V": {
+      "lsl": 0.205,
+      "usl": 0.275,
+      "target": 0.24,
+      "unit": "V"
+    },
+    "vt_p_V": {
+      "lsl": -0.285,
+      "usl": -0.215,
+      "target": -0.25,
+      "unit": "V"
+    },
+    "idsat_uA_um": {
+      "lsl": 820.0,
+      "usl": 1020.0,
+      "target": 920.0,
+      "unit": "uA/um"
+    },
+    "ss_mV_dec": {
+      "lsl": 60.0,
+      "usl": 72.0,
+      "target": 66.0,
+      "unit": "mV/dec"
+    }
+  },
+  "module_tools": {
+    "Fin Etch": [
+      "ETCH-01",
+      "ETCH-02",
+      "ETCH-03"
+    ],
+    "Gate Oxide": [
+      "FURN-01",
+      "FURN-02"
+    ],
+    "HK/MG": [
+      "ALD-01",
+      "ALD-02"
+    ],
+    "S/D Epi": [
+      "EPI-01",
+      "EPI-02"
+    ],
+    "Contact": [
+      "ETCH-04",
+      "ETCH-05"
+    ],
+    "M1 BEOL": [
+      "PVD-01",
+      "PVD-02"
+    ],
+    "Via": [
+      "ETCH-06",
+      "ETCH-07"
+    ]
+  },
+  "module_params": {
+    "Fin Etch": [
+      "fin_width_nm",
+      "fin_height_nm"
+    ],
+    "Gate Oxide": [
+      "gate_ox_thk_nm"
+    ],
+    "HK/MG": [
+      "hk_thk_nm",
+      "vt_n_V",
+      "vt_p_V"
+    ],
+    "S/D Epi": [
+      "sd_epi_thk_nm",
+      "idsat_uA_um"
+    ],
+    "Contact": [
+      "contact_cd_nm"
+    ],
+    "M1 BEOL": [
+      "m1_width_nm",
+      "m1_space_nm"
+    ],
+    "Via": [
+      "via_cd_nm"
+    ]
+  },
+  "reliability_tests": {
+    "HTOL": {
+      "params": [
+        "gate_ox_thk_nm",
+        "hk_thk_nm",
+        "vt_n_V"
+      ],
+      "life_min": 1000,
+      "deg_max": 20.0
+    },
+    "TDDB": {
+      "params": [
+        "gate_ox_thk_nm",
+        "hk_thk_nm",
+        "gate_length_nm"
+      ],
+      "life_min": 1000000.0,
+      "deg_max": 30.0
+    },
+    "NBTI": {
+      "params": [
+        "gate_ox_thk_nm",
+        "vt_p_V",
+        "fin_height_nm"
+      ],
+      "life_min": 800,
+      "deg_max": 25.0
+    },
+    "HCI": {
+      "params": [
+        "gate_length_nm",
+        "fin_width_nm",
+        "ss_mV_dec"
+      ],
+      "life_min": 1000,
+      "deg_max": 20.0
+    },
+    "EM": {
+      "params": [
+        "m1_width_nm",
+        "m1_space_nm",
+        "via_cd_nm"
+      ],
+      "life_min": 2000,
+      "deg_max": 12.0
+    },
+    "ESD": {
+      "params": [
+        "fin_width_nm",
+        "sd_epi_thk_nm",
+        "contact_cd_nm"
+      ],
+      "life_min": 2000,
+      "deg_max": 10.0
+    },
+    "TC": {
+      "params": [
+        "contact_cd_nm",
+        "m1_width_nm",
+        "via_cd_nm"
+      ],
+      "life_min": 500,
+      "deg_max": 15.0
+    },
+    "LTOL": {
+      "params": [
+        "gate_ox_thk_nm",
+        "gate_length_nm",
+        "fin_height_nm"
+      ],
+      "life_min": 1500,
+      "deg_max": 14.0
+    }
+  },
+  "fail_modes": [
+    "Oxide BD",
+    "Wear-out",
+    "Metal Migration",
+    "Junction Leak",
+    "Contact Open",
+    "Vt Shift",
+    "Fin Collapse"
+  ],
+  "ground_truth_rogue_tools": {
+    "FURN-02": 1.05,
+    "PVD-02": 1.0
+  },
+  "note": "문제 설비는 파라미터를 스펙 안에서만 흔든다. 파라미터 판정만으로는 못 잡고, 신뢰성 합격률과 설비를 엮어야 보인다.",
+  "shapes": {
+    "wafer_params": [
+      1200,
+      34
+    ],
+    "reliability_tests": [
+      9600,
+      8
+    ],
+    "tool_history": [
+      1200,
+      10
+    ]
+  }
+}

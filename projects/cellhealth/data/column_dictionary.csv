@@ -1,0 +1,19 @@
+column,description,type
+device_uid,디바이스 고유 ID (수집 회차 간 동일),string
+collect_round,수집 회차 (1차 / 2차),int
+collect_date,수집 일자,date
+vendor,메모리 제조사 코드,string
+product_family,제품군 (UFS3.1 / UFS2.2 / eMMC5.1),string
+part_no,제품 Part Number,string
+density_gb,공칭 용량 (GB),int
+fw_version,펌웨어 버전,string
+storage_used_gb,실사용 용량 (GB),float
+storage_util,총 용량 대비 사용률 (0~1),float
+pe_cycle,블록 Program/Erase 반복 횟수,int
+pe_ratio,정격 P/E 수명 대비 소모율 (pe_cycle / rated_pe),float
+tbw_gb,누적 기록량 Total Bytes Written (GB),int
+power_on_hours,누적 전원 인가 시간,int
+temp_max_c,관측 최고 온도 (섭씨),int
+rtbb,Run Time Bad Block — 사용 중 발생한 불량 블록 수,int
+uecc,Uncorrectable ECC — 정정 불가 비트 에러 발생 횟수,int
+health_pct,컨트롤러가 보고하는 잔여 수명 (%),int

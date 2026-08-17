@@ -1,0 +1,240 @@
+[
+  {
+    "question": "벤더별 평균 PE 사이클은?",
+    "plan": {
+      "question": "벤더별 평균 PE 사이클은?",
+      "agg": "mean",
+      "metric": "pe_cycle",
+      "group_by": "vendor",
+      "filters": []
+    },
+    "response": {
+      "ok": true,
+      "columns_used": [
+        "pe_cycle",
+        "vendor"
+      ],
+      "filters_applied": [],
+      "rows_scanned": 200000,
+      "rows_matched": 200000,
+      "aggregation": "mean",
+      "result": [
+        {
+          "vendor": "HYX",
+          "pe_cycle": 467.144
+        },
+        {
+          "vendor": "MCR",
+          "pe_cycle": 375.2099
+        },
+        {
+          "vendor": "SMS",
+          "pe_cycle": 437.4473
+        }
+      ]
+    }
+  },
+  {
+    "question": "제품군별 uecc 평균은?",
+    "plan": {
+      "question": "제품군별 uecc 평균은?",
+      "agg": "mean",
+      "metric": "uecc",
+      "group_by": "product_family",
+      "filters": []
+    },
+    "response": {
+      "ok": true,
+      "columns_used": [
+        "product_family",
+        "uecc"
+      ],
+      "filters_applied": [],
+      "rows_scanned": 200000,
+      "rows_matched": 200000,
+      "aggregation": "mean",
+      "result": [
+        {
+          "product_family": "UFS2.2",
+          "uecc": 0.0252
+        },
+        {
+          "product_family": "UFS3.1",
+          "uecc": 0.025
+        },
+        {
+          "product_family": "eMMC5.1",
+          "uecc": 0.0256
+        }
+      ]
+    }
+  },
+  {
+    "question": "pe_cycle 이 2000 이상인 디바이스 개수는?",
+    "plan": {
+      "question": "pe_cycle 이 2000 이상인 디바이스 개수는?",
+      "agg": "count",
+      "metric": "device_uid",
+      "group_by": null,
+      "filters": [
+        {
+          "column": "pe_cycle",
+          "op": "ge",
+          "value": 2000.0
+        }
+      ]
+    },
+    "response": {
+      "ok": true,
+      "columns_used": [
+        "device_uid",
+        "pe_cycle"
+      ],
+      "filters_applied": [
+        "pe_cycle >= 2000"
+      ],
+      "rows_scanned": 200000,
+      "rows_matched": 1518,
+      "aggregation": "count",
+      "result": [
+        {
+          "count": 1518
+        }
+      ]
+    }
+  },
+  {
+    "question": "소모율이 0.7 이상인 디바이스의 평균 rtbb 는?",
+    "plan": {
+      "question": "소모율이 0.7 이상인 디바이스의 평균 rtbb 는?",
+      "agg": "mean",
+      "metric": "rtbb",
+      "group_by": null,
+      "filters": [
+        {
+          "column": "pe_ratio",
+          "op": "ge",
+          "value": 0.7
+        }
+      ]
+    },
+    "response": {
+      "ok": true,
+      "columns_used": [
+        "pe_ratio",
+        "rtbb"
+      ],
+      "filters_applied": [
+        "pe_ratio >= 0.7"
+      ],
+      "rows_scanned": 200000,
+      "rows_matched": 1890,
+      "aggregation": "mean",
+      "result": [
+        {
+          "rtbb": 3.7069
+        }
+      ]
+    }
+  },
+  {
+    "question": "벤더별 잔여 수명 중앙값은?",
+    "plan": {
+      "question": "벤더별 잔여 수명 중앙값은?",
+      "agg": "median",
+      "metric": "health_pct",
+      "group_by": "vendor",
+      "filters": []
+    },
+    "response": {
+      "ok": true,
+      "columns_used": [
+        "health_pct",
+        "vendor"
+      ],
+      "filters_applied": [],
+      "rows_scanned": 200000,
+      "rows_matched": 200000,
+      "aggregation": "median",
+      "result": [
+        {
+          "vendor": "HYX",
+          "health_pct": 87.0
+        },
+        {
+          "vendor": "MCR",
+          "health_pct": 87.0
+        },
+        {
+          "vendor": "SMS",
+          "health_pct": 87.0
+        }
+      ]
+    }
+  },
+  {
+    "question": "온도 70 이상인 디바이스의 최대 uecc 는?",
+    "plan": {
+      "question": "온도 70 이상인 디바이스의 최대 uecc 는?",
+      "agg": "max",
+      "metric": "uecc",
+      "group_by": null,
+      "filters": [
+        {
+          "column": "temp_max_c",
+          "op": "ge",
+          "value": 70.0
+        }
+      ]
+    },
+    "response": {
+      "ok": true,
+      "columns_used": [
+        "temp_max_c",
+        "uecc"
+      ],
+      "filters_applied": [
+        "temp_max_c >= 70"
+      ],
+      "rows_scanned": 200000,
+      "rows_matched": 3976,
+      "aggregation": "max",
+      "result": [
+        {
+          "uecc": 58
+        }
+      ]
+    }
+  },
+  {
+    "question": "회차별 평균 소모율은?",
+    "plan": {
+      "question": "회차별 평균 소모율은?",
+      "agg": "mean",
+      "metric": "pe_ratio",
+      "group_by": "collect_round",
+      "filters": []
+    },
+    "response": {
+      "ok": true,
+      "columns_used": [
+        "collect_round",
+        "pe_ratio"
+      ],
+      "filters_applied": [],
+      "rows_scanned": 200000,
+      "rows_matched": 200000,
+      "aggregation": "mean",
+      "result": [
+        {
+          "collect_round": 1,
+          "pe_ratio": 0.1115
+        },
+        {
+          "collect_round": 2,
+          "pe_ratio": 0.2234
+        }
+      ]
+    }
+  }
+]

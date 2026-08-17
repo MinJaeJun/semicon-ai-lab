@@ -1,0 +1,385 @@
+{
+  "dataset": "EtchPilot etch recipe evaluation",
+  "grain": "1행 = 1 Wafer의 1 Site 계측 결과",
+  "site_layout": {
+    "total": 29,
+    "zones": [
+      {
+        "zone": "Center",
+        "count": 1,
+        "radius_frac": 0.0
+      },
+      {
+        "zone": "Mid",
+        "count": 6,
+        "radius_frac": 0.52
+      },
+      {
+        "zone": "Edge",
+        "count": 11,
+        "radius_frac": 0.84
+      },
+      {
+        "zone": "Extreme Edge",
+        "count": 11,
+        "radius_frac": 0.96
+      }
+    ],
+    "sites": [
+      {
+        "site_id": "C1",
+        "zone": "Center",
+        "radius_frac": 0.0,
+        "angle_deg": 0.0
+      },
+      {
+        "site_id": "MID-01",
+        "zone": "Mid",
+        "radius_frac": 0.52,
+        "angle_deg": 30.0
+      },
+      {
+        "site_id": "MID-02",
+        "zone": "Mid",
+        "radius_frac": 0.52,
+        "angle_deg": 90.0
+      },
+      {
+        "site_id": "MID-03",
+        "zone": "Mid",
+        "radius_frac": 0.52,
+        "angle_deg": 150.0
+      },
+      {
+        "site_id": "MID-04",
+        "zone": "Mid",
+        "radius_frac": 0.52,
+        "angle_deg": 210.0
+      },
+      {
+        "site_id": "MID-05",
+        "zone": "Mid",
+        "radius_frac": 0.52,
+        "angle_deg": 270.0
+      },
+      {
+        "site_id": "MID-06",
+        "zone": "Mid",
+        "radius_frac": 0.52,
+        "angle_deg": 330.0
+      },
+      {
+        "site_id": "EDG-01",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 0.0
+      },
+      {
+        "site_id": "EDG-02",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 32.7
+      },
+      {
+        "site_id": "EDG-03",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 65.5
+      },
+      {
+        "site_id": "EDG-04",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 98.2
+      },
+      {
+        "site_id": "EDG-05",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 130.9
+      },
+      {
+        "site_id": "EDG-06",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 163.6
+      },
+      {
+        "site_id": "EDG-07",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 196.4
+      },
+      {
+        "site_id": "EDG-08",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 229.1
+      },
+      {
+        "site_id": "EDG-09",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 261.8
+      },
+      {
+        "site_id": "EDG-10",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 294.5
+      },
+      {
+        "site_id": "EDG-11",
+        "zone": "Edge",
+        "radius_frac": 0.84,
+        "angle_deg": 327.3
+      },
+      {
+        "site_id": "EXT-01",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 16.4
+      },
+      {
+        "site_id": "EXT-02",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 49.1
+      },
+      {
+        "site_id": "EXT-03",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 81.8
+      },
+      {
+        "site_id": "EXT-04",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 114.5
+      },
+      {
+        "site_id": "EXT-05",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 147.3
+      },
+      {
+        "site_id": "EXT-06",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 180.0
+      },
+      {
+        "site_id": "EXT-07",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 212.7
+      },
+      {
+        "site_id": "EXT-08",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 245.5
+      },
+      {
+        "site_id": "EXT-09",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 278.2
+      },
+      {
+        "site_id": "EXT-10",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 310.9
+      },
+      {
+        "site_id": "EXT-11",
+        "zone": "Extreme Edge",
+        "radius_frac": 0.96,
+        "angle_deg": 343.6
+      }
+    ]
+  },
+  "revisions": [
+    "Base",
+    "Rev1",
+    "Rev2",
+    "Rev3",
+    "Rev4",
+    "Rev5",
+    "Rev6",
+    "Rev7",
+    "Rev8",
+    "Rev9",
+    "Rev10",
+    "Rev11"
+  ],
+  "tools": {
+    "AE-3200": [
+      "CH-A",
+      "CH-B"
+    ],
+    "PX-7500": [
+      "CH-C",
+      "CH-D"
+    ]
+  },
+  "processes": {
+    "poly": {
+      "process": "poly",
+      "wafers": 216,
+      "sites_per_wafer": 29,
+      "rows": 6264,
+      "revisions": 12,
+      "stages": [
+        "S1",
+        "S2"
+      ],
+      "recipe_params": 12,
+      "depth_column": "Depth_A",
+      "depth_unit": "angstrom",
+      "spec": {
+        "top_cd": [
+          36.6,
+          40.4
+        ],
+        "mid_cd": [
+          37.8,
+          42.0
+        ],
+        "bottom_cd": [
+          34.2,
+          40.4
+        ],
+        "depth": [
+          1580.0,
+          1760.0
+        ]
+      },
+      "tool_chamber": {
+        "AE-3200/CH-A": 54,
+        "AE-3200/CH-B": 54,
+        "PX-7500/CH-C": 54,
+        "PX-7500/CH-D": 54
+      }
+    },
+    "contact": {
+      "process": "contact",
+      "wafers": 204,
+      "sites_per_wafer": 29,
+      "rows": 5916,
+      "revisions": 12,
+      "stages": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "recipe_params": 15,
+      "depth_column": "Depth_nm",
+      "depth_unit": "nm",
+      "spec": {
+        "top_cd": [
+          68.4,
+          75.2
+        ],
+        "mid_cd": [
+          65.6,
+          72.8
+        ],
+        "bottom_cd": [
+          59.4,
+          70.6
+        ],
+        "depth": [
+          376.0,
+          452.0
+        ]
+      },
+      "tool_chamber": {
+        "AE-3200/CH-A": 51,
+        "AE-3200/CH-B": 51,
+        "PX-7500/CH-C": 51,
+        "PX-7500/CH-D": 51
+      }
+    },
+    "via": {
+      "process": "via",
+      "wafers": 228,
+      "sites_per_wafer": 29,
+      "rows": 6612,
+      "revisions": 12,
+      "stages": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ],
+      "recipe_params": 20,
+      "depth_column": "Depth_nm",
+      "depth_unit": "nm",
+      "spec": {
+        "top_cd": [
+          91.5,
+          100.8
+        ],
+        "mid_cd": [
+          86.8,
+          97.6
+        ],
+        "bottom_cd": [
+          78.0,
+          94.5
+        ],
+        "depth": [
+          880.0,
+          1090.0
+        ]
+      },
+      "tool_chamber": {
+        "AE-3200/CH-A": 57,
+        "AE-3200/CH-B": 57,
+        "PX-7500/CH-C": 57,
+        "PX-7500/CH-D": 57
+      }
+    },
+    "pad": {
+      "process": "pad",
+      "wafers": 192,
+      "sites_per_wafer": 29,
+      "rows": 5568,
+      "revisions": 12,
+      "stages": [
+        "S1"
+      ],
+      "recipe_params": 5,
+      "depth_column": "Depth_nm",
+      "depth_unit": "nm",
+      "spec": {
+        "top_cd": [
+          2075.0,
+          2225.0
+        ],
+        "mid_cd": [
+          2015.0,
+          2195.0
+        ],
+        "bottom_cd": [
+          1900.0,
+          2170.0
+        ],
+        "depth": [
+          3000.0,
+          3500.0
+        ]
+      },
+      "tool_chamber": {
+        "AE-3200/CH-A": 48,
+        "AE-3200/CH-B": 48,
+        "PX-7500/CH-C": 48,
+        "PX-7500/CH-D": 48
+      }
+    }
+  }
+}

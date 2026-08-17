@@ -1,0 +1,226 @@
+{
+  "poly": [
+    {
+      "parameter": "S1_Source_RF_W",
+      "direction": "증가",
+      "current": 953.0,
+      "proposed": 1010.18,
+      "base_score": 67.04,
+      "predicted_score": 80.89,
+      "gain": 13.85
+    },
+    {
+      "parameter": "S2_Gas_Flow_sccm",
+      "direction": "감소",
+      "current": 139.0,
+      "proposed": 130.66,
+      "base_score": 67.04,
+      "predicted_score": 70.42,
+      "gain": 3.38
+    },
+    {
+      "parameter": "S1_Gas_Flow_sccm",
+      "direction": "증가",
+      "current": 140.0,
+      "proposed": 148.4,
+      "base_score": 67.04,
+      "predicted_score": 67.87,
+      "gain": 0.83
+    },
+    {
+      "parameter": "S2_Time_s",
+      "direction": "증가",
+      "current": 61.7,
+      "proposed": 65.402,
+      "base_score": 67.04,
+      "predicted_score": 67.53,
+      "gain": 0.49
+    },
+    {
+      "parameter": "S1_Pressure_mT",
+      "direction": "증가",
+      "current": 16.5,
+      "proposed": 17.49,
+      "base_score": 67.04,
+      "predicted_score": 67.5,
+      "gain": 0.46
+    },
+    {
+      "parameter": "S1_Gas2_Flow_sccm",
+      "direction": "증가",
+      "current": 50.0,
+      "proposed": 53.0,
+      "base_score": 67.04,
+      "predicted_score": 67.36,
+      "gain": 0.32
+    }
+  ],
+  "contact": [
+    {
+      "parameter": "S3_Time_s",
+      "direction": "감소",
+      "current": 60.5,
+      "proposed": 56.87,
+      "base_score": 58.57,
+      "predicted_score": 68.74,
+      "gain": 10.17
+    },
+    {
+      "parameter": "S3_Pressure_mT",
+      "direction": "증가",
+      "current": 16.1,
+      "proposed": 17.066,
+      "base_score": 58.57,
+      "predicted_score": 62.71,
+      "gain": 4.14
+    },
+    {
+      "parameter": "S1_Time_s",
+      "direction": "증가",
+      "current": 60.8,
+      "proposed": 64.448,
+      "base_score": 58.57,
+      "predicted_score": 62.56,
+      "gain": 3.99
+    },
+    {
+      "parameter": "S3_Bias_RF_W",
+      "direction": "감소",
+      "current": 207.0,
+      "proposed": 194.58,
+      "base_score": 58.57,
+      "predicted_score": 61.14,
+      "gain": 2.57
+    },
+    {
+      "parameter": "S1_Gas_Flow_sccm",
+      "direction": "증가",
+      "current": 132.0,
+      "proposed": 139.92,
+      "base_score": 58.57,
+      "predicted_score": 60.85,
+      "gain": 2.28
+    },
+    {
+      "parameter": "S2_Source_RF_W",
+      "direction": "증가",
+      "current": 955.0,
+      "proposed": 1012.3,
+      "base_score": 58.57,
+      "predicted_score": 60.25,
+      "gain": 1.68
+    }
+  ],
+  "via": [
+    {
+      "parameter": "S3_Source_RF_W",
+      "direction": "감소",
+      "current": 941.0,
+      "proposed": 884.54,
+      "base_score": 51.18,
+      "predicted_score": 70.62,
+      "gain": 19.44
+    },
+    {
+      "parameter": "S1_Pressure_mT",
+      "direction": "증가",
+      "current": 16.1,
+      "proposed": 17.066,
+      "base_score": 51.18,
+      "predicted_score": 64.64,
+      "gain": 13.46
+    },
+    {
+      "parameter": "S4_Time_s",
+      "direction": "감소",
+      "current": 70.6,
+      "proposed": 66.364,
+      "base_score": 51.18,
+      "predicted_score": 58.38,
+      "gain": 7.2
+    },
+    {
+      "parameter": "S4_Gas_Flow_sccm",
+      "direction": "증가",
+      "current": 134.0,
+      "proposed": 142.04,
+      "base_score": 51.18,
+      "predicted_score": 57.75,
+      "gain": 6.57
+    },
+    {
+      "parameter": "S3_Gas_Flow_sccm",
+      "direction": "감소",
+      "current": 134.0,
+      "proposed": 125.96,
+      "base_score": 51.18,
+      "predicted_score": 57.74,
+      "gain": 6.56
+    },
+    {
+      "parameter": "S3_Bias_RF_W",
+      "direction": "증가",
+      "current": 202.0,
+      "proposed": 214.12,
+      "base_score": 51.18,
+      "predicted_score": 55.71,
+      "gain": 4.53
+    }
+  ],
+  "pad": [
+    {
+      "parameter": "S1_Gas_Flow_sccm",
+      "direction": "증가",
+      "current": 132.0,
+      "proposed": 139.92,
+      "base_score": 64.65,
+      "predicted_score": 76.73,
+      "gain": 12.08
+    },
+    {
+      "parameter": "S1_Pressure_mT",
+      "direction": "감소",
+      "current": 17.3,
+      "proposed": 16.262,
+      "base_score": 64.65,
+      "predicted_score": 71.46,
+      "gain": 6.81
+    },
+    {
+      "parameter": "S1_Bias_RF_W",
+      "direction": "감소",
+      "current": 201.0,
+      "proposed": 188.94,
+      "base_score": 64.65,
+      "predicted_score": 70.48,
+      "gain": 5.83
+    },
+    {
+      "parameter": "S1_Time_s",
+      "direction": "증가",
+      "current": 57.5,
+      "proposed": 60.95,
+      "base_score": 64.65,
+      "predicted_score": 68.74,
+      "gain": 4.09
+    },
+    {
+      "parameter": "S1_Source_RF_W",
+      "direction": "감소",
+      "current": 942.0,
+      "proposed": 885.48,
+      "base_score": 64.65,
+      "predicted_score": 64.74,
+      "gain": 0.09
+    },
+    {
+      "parameter": "S1_Time_s",
+      "direction": "감소",
+      "current": 57.5,
+      "proposed": 54.05,
+      "base_score": 64.65,
+      "predicted_score": 64.65,
+      "gain": 0.0
+    }
+  ]
+}

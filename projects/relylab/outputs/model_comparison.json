@@ -1,0 +1,136 @@
+{
+  "per_test": [
+    {
+      "test": "HTOL",
+      "fail_rate": 0.2142,
+      "auc_params_only": 0.8943,
+      "auc_params_plus_tools": 0.9479,
+      "gain": 0.0536,
+      "sensitive_params": [
+        "gate_ox_thk_nm",
+        "hk_thk_nm",
+        "vt_n_V"
+      ]
+    },
+    {
+      "test": "TDDB",
+      "fail_rate": 0.39,
+      "auc_params_only": 0.8381,
+      "auc_params_plus_tools": 0.9852,
+      "gain": 0.1471,
+      "sensitive_params": [
+        "gate_ox_thk_nm",
+        "hk_thk_nm",
+        "gate_length_nm"
+      ]
+    },
+    {
+      "test": "NBTI",
+      "fail_rate": 0.375,
+      "auc_params_only": 0.8483,
+      "auc_params_plus_tools": 0.975,
+      "gain": 0.1267,
+      "sensitive_params": [
+        "gate_ox_thk_nm",
+        "vt_p_V",
+        "fin_height_nm"
+      ]
+    },
+    {
+      "test": "HCI",
+      "fail_rate": 0.2683,
+      "auc_params_only": 0.8667,
+      "auc_params_plus_tools": 0.9489,
+      "gain": 0.0822,
+      "sensitive_params": [
+        "gate_length_nm",
+        "fin_width_nm",
+        "ss_mV_dec"
+      ]
+    },
+    {
+      "test": "EM",
+      "fail_rate": 0.3008,
+      "auc_params_only": 0.8187,
+      "auc_params_plus_tools": 0.9713,
+      "gain": 0.1526,
+      "sensitive_params": [
+        "m1_width_nm",
+        "m1_space_nm",
+        "via_cd_nm"
+      ]
+    },
+    {
+      "test": "ESD",
+      "fail_rate": 0.37,
+      "auc_params_only": 0.8316,
+      "auc_params_plus_tools": 0.9423,
+      "gain": 0.1107,
+      "sensitive_params": [
+        "fin_width_nm",
+        "sd_epi_thk_nm",
+        "contact_cd_nm"
+      ]
+    },
+    {
+      "test": "TC",
+      "fail_rate": 0.1533,
+      "auc_params_only": 0.8391,
+      "auc_params_plus_tools": 0.9189,
+      "gain": 0.0798,
+      "sensitive_params": [
+        "contact_cd_nm",
+        "m1_width_nm",
+        "via_cd_nm"
+      ]
+    },
+    {
+      "test": "LTOL",
+      "fail_rate": 0.2217,
+      "auc_params_only": 0.8678,
+      "auc_params_plus_tools": 0.9433,
+      "gain": 0.0755,
+      "sensitive_params": [
+        "gate_ox_thk_nm",
+        "gate_length_nm",
+        "fin_height_nm"
+      ]
+    }
+  ],
+  "tool_detection": {
+    "n_tools_tested": 15,
+    "n_flagged": 4,
+    "true_rogue_tools": [
+      "FURN-02",
+      "PVD-02"
+    ],
+    "flagged_tools": [
+      "FURN-02",
+      "PVD-02",
+      "ETCH-05",
+      "ALD-02"
+    ],
+    "precision": 0.5,
+    "recall": 1.0
+  },
+  "hidden_effect": [
+    {
+      "tool": "FURN-02",
+      "module": "Gate Oxide",
+      "param": "gate_ox_thk_nm",
+      "in_spec_rate_on_tool": 0.7545,
+      "in_spec_rate_others": 0.9305,
+      "reliability_pass_on_tool": 0.3076,
+      "reliability_pass_others": 0.8442
+    },
+    {
+      "tool": "PVD-02",
+      "module": "M1 BEOL",
+      "param": "m1_width_nm",
+      "in_spec_rate_on_tool": 0.9826,
+      "in_spec_rate_others": 0.9984,
+      "reliability_pass_on_tool": 0.3113,
+      "reliability_pass_others": 0.712
+    }
+  ]
+}

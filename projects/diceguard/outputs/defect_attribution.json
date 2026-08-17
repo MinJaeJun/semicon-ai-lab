@@ -1,0 +1,66 @@
+{
+  "with_monitoring": {
+    "n_features": 16,
+    "base_defect_rate": 0.2317,
+    "precision_at_top5pct": 0.7773,
+    "lift": 3.35,
+    "top_features": [
+      {
+        "feature": "Clean_Flow_lpm",
+        "importance": 0.14523
+      },
+      {
+        "feature": "Focus_Offset_um",
+        "importance": 0.04958
+      },
+      {
+        "feature": "Laser_Power_W",
+        "importance": 0.01395
+      },
+      {
+        "feature": "Clean_Pressure_bar",
+        "importance": 0.00813
+      },
+      {
+        "feature": "Clean_Time_s",
+        "importance": 0.00358
+      },
+      {
+        "feature": "Power_Efficiency_pct",
+        "importance": 0.00164
+      }
+    ]
+  },
+  "actionable_only": {
+    "n_features": 12,
+    "base_defect_rate": 0.2317,
+    "precision_at_top5pct": 0.772,
+    "lift": 3.33,
+    "top_features": [
+      {
+        "feature": "Clean_Flow_lpm",
+        "importance": 0.14972
+      },
+      {
+        "feature": "Focus_Offset_um",
+        "importance": 0.04881
+      },
+      {
+        "feature": "Laser_Power_W",
+        "importance": 0.01597
+      },
+      {
+        "feature": "Clean_Pressure_bar",
+        "importance": 0.00997
+      },
+      {
+        "feature": "Clean_Time_s",
+        "importance": 0.00508
+      },
+      {
+        "feature": "Power_Efficiency_pct",
+        "importance": 0.0014
+      }
+    ]
+  }
+}

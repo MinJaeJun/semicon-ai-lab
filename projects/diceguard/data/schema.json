@@ -1,0 +1,83 @@
+{
+  "dataset": "DiceGuard laser dicing FDC",
+  "grain": "1행 = 스트립 1장 가공 이력",
+  "period": {
+    "start": "2026-01-06",
+    "days": 120
+  },
+  "machines": [
+    "LD-01",
+    "LD-02",
+    "LD-03",
+    "LD-04",
+    "LD-05",
+    "LD-06"
+  ],
+  "actionable_fdc": [
+    "Laser_Power_W",
+    "Laser_Frequency_kHz",
+    "Power_Efficiency_pct",
+    "Beam_Center_Offset_um",
+    "Feed_Speed_mm_s",
+    "Focus_Offset_um",
+    "Head_Temp_C",
+    "Coolant_Flow_lpm",
+    "Clean_Flow_lpm",
+    "Clean_Pressure_bar",
+    "Clean_Time_s",
+    "Vibration_mm_s"
+  ],
+  "monitoring_response": [
+    "Kerf_Width_um",
+    "Groove_Depth_um",
+    "Coat_Thickness_um",
+    "Coat_Roughness_nm"
+  ],
+  "defects": [
+    "Chipping",
+    "MicroCrack",
+    "Particle",
+    "CoatResidue",
+    "EdgeBurn"
+  ],
+  "targets": [
+    "Fail_Die",
+    "Yield_pct",
+    "NG_Code"
+  ],
+  "causal_note": "설비 설정값(actionable) -> 감시지표(monitoring) -> 불량. 단, 불량은 감시지표를 거치지 않고 설정값에서 직접 발현되는 경로도 있다.",
+  "injected_degradation": [
+    {
+      "machine": "LD-03",
+      "variable": "Clean_Flow_lpm",
+      "total_shift": -0.444,
+      "in_sigma": -2.4,
+      "onset_day": 18
+    },
+    {
+      "machine": "LD-05",
+      "variable": "Power_Efficiency_pct",
+      "total_shift": -0.1875,
+      "in_sigma": -2.5,
+      "onset_day": 36
+    },
+    {
+      "machine": "LD-02",
+      "variable": "Vibration_mm_s",
+      "total_shift": 0.1955,
+      "in_sigma": 2.3,
+      "onset_day": 54
+    }
+  ],
+  "defect_base_rate": {
+    "Chipping": 0.03,
+    "MicroCrack": 0.003,
+    "Particle": 0.055,
+    "CoatResidue": 0.024,
+    "EdgeBurn": 0.011
+  },
+  "shape": [
+    60000,
+    38
+  ]
+}
