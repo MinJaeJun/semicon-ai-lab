@@ -31,6 +31,11 @@ from common.synth import rng_for  # noqa: E402
 from common.validate import Report, check_categories, check_range, check_shape  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
+
+# gzip 헤더에 압축 시각이 박히면 같은 데이터를 다시 만들어도 파일 바이트가 달라진다.
+# mtime 을 0 으로 고정해야 재생성 결과가 바이트 단위로 동일해진다.
+GZIP = {"method": "gzip", "mtime": 0}
+
 DATA = HERE / "data"
 
 N_DEVICES = 100_000
@@ -184,7 +189,7 @@ def main() -> None:
     rep = validate(df)
     print(rep.render())
     rep.raise_if_failed()
-    df.to_csv(DATA / "device_health.csv.gz", index=False, encoding="utf-8")
+    df.to_csv(DATA / "device_health.csv.gz", index=False, encoding="utf-8", compression=GZIP)
     pd.DataFrame(COLUMN_DICT, columns=["column", "description", "type"]).to_csv(
         DATA / "column_dictionary.csv", index=False, encoding="utf-8"
     )
