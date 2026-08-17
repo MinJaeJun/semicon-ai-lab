@@ -2,6 +2,10 @@
 
 반도체 제조 데이터로 푸는 다섯 가지 문제를, 데이터 생성부터 검증까지 전부 재현 가능하게 만든 저장소.
 
+### 👉 **[결과 대시보드 보기](https://minjaejun.github.io/semicon-ai-lab/)**
+
+아래 명령이 만들어낸 결과를 그대로 웹에서 볼 수 있다. 프레임워크도 CDN 도 쓰지 않은 정적 페이지다.
+
 ```bash
 pip install -r requirements.txt
 python build_all.py
@@ -59,6 +63,7 @@ semicon-ai-lab/
 │  ├─ diceguard/             레이저 다이싱 열화 감지
 │  ├─ cellhealth/            스토리지 필드 헬스
 │  └─ relylab/               FinFET 신뢰성 · 설비 귀인
+├─ site/                     결과 대시보드 (GitHub Pages)
 └─ docs/DATA_LINEAGE.md      데이터 출처와 합성 방침
 ```
 
